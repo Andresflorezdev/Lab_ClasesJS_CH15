@@ -37,6 +37,14 @@ const { Pelicula } = require("./02-clase-pelicula");
 
 class PeliculaVIP {
   // Tu código aquí
+  constructor(titulo, duracion, incluyeComida) {
+    super(titulo, duracion)
+    this.incluyeComida = incluyeComida
+  }
+
+  precioBoleto(){
+    let 
+  }
 }
 
 // No borres esta línea: es la puerta por donde el test usa tu clase
