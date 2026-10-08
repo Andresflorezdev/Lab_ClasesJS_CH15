@@ -51,12 +51,6 @@ class Restaurante {
   }
 }
 
-const brasa = new Restaurante("La Brasa Dorada", "Asados", 4.6);
-brasa.describir();
-brasa.estaBienCalificado();
-
-const wok = new Restaurante("Wok Express", "Comida china", 4.2);
-wok.estaBienCalificado();
 
 // No borres esta línea: es la puerta por donde el test usa tu clase
 module.exports = { Restaurante };
