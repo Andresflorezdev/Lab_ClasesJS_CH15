@@ -35,15 +35,18 @@
 // Esta línea trae tu clase Pelicula del ejercicio 02
 const { Pelicula } = require("./02-clase-pelicula");
 
-class PeliculaVIP {
+class PeliculaVIP extends Pelicula{
   // Tu código aquí
   constructor(titulo, duracion, incluyeComida) {
     super(titulo, duracion)
     this.incluyeComida = incluyeComida
   }
 
-  precioBoleto(){
-    let 
+  precioBoleta(){
+    if (this.incluyeComida) {
+      return super.precioBoleta() + 25000 + 18000;
+    }
+    return super.precioBoleta() + 25000;
   }
 }
 
